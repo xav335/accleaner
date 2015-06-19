@@ -110,7 +110,7 @@ if (empty($_GET['action']) && empty($_GET['postaction']) ) {
 
 //$corps = utf8_decode( $corps );
 
-$sujet = "Les Secrets De Louise - Newsletter ";
+$sujet = "$mailNameCustomer - Newsletter ";
 $entete = "From:$mailNameCustomer <$mailCustomer>\n";
 $entete .= "MIME-version: 1.0\n";
 $entete .= "Content-type: text/html; charset= iso-8859-1\n";
