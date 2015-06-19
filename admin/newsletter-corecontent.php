@@ -57,7 +57,7 @@ $corps = <<<EOD
 				<div style="text-align:center;  margin-left:auto;margin-right:auto; width: 640px; border: 4px ridge white; padding:20px 20px 20px 20px; ">
 					
 					<a href="http://$urlSite"><img  src="http://$urlSite/newsletter/logo.png" alt=""></a>
-				
+					<br><br>		
 					<h1>$titre</h1>
 					<br><br>
 EOD;
