@@ -54,7 +54,7 @@ require 'classes/Newsletter.php';
 							?>
 							<tr class="<?php if ($i%2!=0) echo 'info'?>">
 								<td><?php echo $value['id']?></td>
-								<td><?php echo traitement_datetime_affiche($value['date'])?></td>
+								<td><?php echo traitement_heure_affiche($value['date'])?></td>
 								<td><?php echo $value['titre']?></td>
 								<td><a href="newsletter-edit.php?id=<?php echo $value['id'] ?>"><img src="img/modif.png" width="30" alt="Modifier" ></a>&nbsp;&nbsp;&nbsp;&nbsp;
 								<img src="img/eye.png" width="20" alt="preview" onclick="openPreview('<?php echo $value['id']?>')"> </td>

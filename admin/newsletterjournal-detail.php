@@ -68,7 +68,7 @@ require 'classes/Newsletter.php';
 					<thead>
 						<tr>
 							<th class="col-md-3" style="" colspan="3">
-								<h4>Emails lus: <?php echo $totalread?> - Emails non lus : <?php echo $total-$totalread?></h4>  
+								<h4>Total: <?php echo $total?> - Emails lus: <?php echo $totalread?> - Emails non lus : <?php echo $total-$totalread?></h4>  
 							</th>
 						</tr>
 					</thead>

@@ -8,6 +8,7 @@ define("DBPASSWD", "accleaner33");
 //mail parametrage
 $mailCustomer = "u.calmo@accleaner.eu";
 $mailNameCustomer = "AcCleaner";
+$urlSiteDefault = "http://www.accleaner.eu/";
 $facebookLink = "https://www.facebook.com/ACcleanerBordeaux";
 
 //mail d'envoi

@@ -278,11 +278,34 @@ class Newsletter extends StorageManager {
 	
 		} catch (Exception $e) {
 			$this->rollback();
-			throw new Exception("Erreur Mysql newsletterModify ". $e->getMessage());
+			throw new Exception("Erreur Mysql journalNewsletterTrack ". $e->getMessage());
 			return "errrrrrrooooOOor";
 		}
 	
 		$this->dbDisConnect();
+	}
+	
+	public function journalNewsletterTrackClicks($id, $id_click){
+	    //print_r($value); exit();
+	    $this->dbConnect();
+	    $this->begin();
+	    try {
+	        $sql = "UPDATE  newsletter_journal_detail SET
+					`idclick`=". $id_click ." WHERE `coderandom`='". $id ."';";
+	        $result = mysqli_query($this->mysqli,$sql);
+	        if (!$result) {
+	            throw new Exception($sql);
+	        }
+	
+	        $this->commit();
+	
+	    } catch (Exception $e) {
+	        $this->rollback();
+	        throw new Exception("Erreur Mysql journalNewsletterTrackClicks ". $e->getMessage());
+	        return "errrrrrrooooOOor";
+	    }
+	
+	    $this->dbDisConnect();
 	}
 	
 	public function journalNewsletterGet(){
